@@ -1,0 +1,174 @@
+form {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.fields label {
+  font-size: 25px;
+  position: absolute;
+  top: 30%;
+  left: 20px;
+  transition: all 0.2s ease-in-out;
+}
+.fields input {
+  display: block;
+  background-color: rgba(105, 105, 105, 0.541);
+  font-size: 25px;
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin: 40px 0 0 0;
+  box-shadow: 0px 0px 50px -3px #8c8c8c;
+}
+.fields #name {
+  margin: 0;
+}
+.fields input:focus ~ label,
+.fields input:valid ~ label,
+.fields .txt ~ label {
+  font-size: 18px;
+  top: -50%;
+}
+.modal-title {
+  font-size: 40px;
+  font-weight: 500;
+  color: rgb(27, 27, 27);
+  text-align: center;
+}
+select {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 0em 0 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: 25px;
+  cursor: pointer;
+  line-height: inherit;
+}
+.form_container {
+  padding: 15px 10px;
+
+  max-width: 600px;
+  background-color: rgba(116, 116, 116, 0.349);
+  border-radius: 5px;
+}
+
+.input_box {
+  position: relative;
+}
+.data_birth {
+  margin: 25px 0 0 40px;
+}
+.data_birth span {
+  display: inline-block;
+  font-size: 25px;
+  margin: 0 0px 0 -5px;
+  cursor: pointer;
+}
+.data_birth span:last-child {
+  margin: 0 0 0px 25px;
+}
+.BTNreg {
+  font-size: 25px;
+  background-color: rgba(242, 237, 162, 0.5);
+  width: 100%;
+  padding: 15px 20px;
+  text-align: center;
+  margin: 30px 0 0 0;
+  border-radius: 5px;
+  box-shadow: 0px 0px 50px -5px rgba(242, 237, 162, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+.BTNreg:hover {
+  background-color: rgba(242, 237, 162, 0.9);
+}
+.termsOFuse input {
+  display: none;
+}
+.termsOFuse label {
+  cursor: pointer;
+  display: block;
+  padding: 0 0 0 45px;
+  margin: 30px 0 0 0;
+  font-size: 20px;
+  font-weight: 300;
+  position: relative;
+}
+.termsOFuse label::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0%;
+  left: 15px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid #25252593;
+  transition: 0.2s ease-in-out;
+}
+#checkbox:checked ~ .checkbox::before {
+  background: rgb(141, 138, 93, 0.6);
+}
+.checkbox a {
+  color: rgb(141, 138, 93);
+  font-weight: 500;
+}
+.sex {
+  margin: 25px 0 0 40px;
+  font-size: 25px;
+}
+.sex input {
+  display: none;
+}
+.sex span:last-child {
+  margin-left: 7px;
+}
+.sex label {
+  cursor: pointer;
+  position: relative;
+}
+.sex label::after {
+  content: "";
+  display: block;
+  background: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  transform: scaleX(0);
+  transition: 0.3s ease-in-out;
+}
+.men::after {
+  transform-origin: right;
+}
+.women::after {
+  transform-origin: left;
+}
+#men:checked ~ .men::after,
+#women:checked ~ .women::after {
+  transform: scaleX(100%);
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 0;
+  -webkit-text-fill-color: inherit;
+  -webkit-box-shadow: 0px 0px 50px -3px #8c8c8c;
+  transition: background-color 5000s ease-in-out 0s;
+}
+@media (max-width: 550px) {
+  .sex_text {
+    display: none;
+  }
+  .sex {
+    margin: 25px 0 0 0;
+    text-align: center;
+  }
+}
